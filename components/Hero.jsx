@@ -89,7 +89,7 @@ export default function Hero() {
               <ShieldCheck className="w-6 h-6 text-emerald-400 shrink-0 mt-1" />
               <div>
                 <h4 className="text-white text-sm font-bold">تفعيل وأمان عتادي</h4>
-                <p className="text-gray-400 text-xs mt-0.5">ترخيص مشفر مربوط ببصمة العتاد وSupabase السحابية</p>
+                <p className="text-gray-400 text-xs mt-0.5">ترخيص مشفر مربوط ببصمة العتاد وحفظ سحابي بـ Google Drive</p>
               </div>
             </div>
 
@@ -97,7 +97,7 @@ export default function Hero() {
               <RefreshCw className="w-6 h-6 text-amber-400 shrink-0 mt-1" />
               <div>
                 <h4 className="text-white text-sm font-bold">مزامنة تلقائية</h4>
-                <p className="text-gray-400 text-xs mt-0.5">نسخ احتياطي محلي وسحابي منظم مع تحديثات تلقائية</p>
+                <p className="text-gray-400 text-xs mt-0.5">نسخ احتياطي محلي وسحابي عبر Google Drive وتحديثات تلقائية</p>
               </div>
             </div>
           </div>

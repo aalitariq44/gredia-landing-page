@@ -69,8 +69,8 @@ export default function PlatformOverview() {
                     'طباعة إيصالات الدفع الفورية وهويات الطلاب الذكية (PDF High DPI).',
                     'عزل السنوات الدراسية وإدارة الترفيع والتخرج التلقائي للطلاب.',
                     'إدارة عقود المعلمين، الكادر الخدمي، الرواتب والاقطاعات والمكافآت.',
-                    'تراخيص مشفرة بالعتاد (Motherboard, CPU, HDD, MAC) محلياً وسحابياً.',
-                    'نسخ احتياطي تلقائي (محي وسحابي عبر Supabase) وتحديثات تلقائية عبر Firebase.'
+                    'تراخيص مشفرة بالعتاد (Motherboard, CPU, HDD, MAC) محلياً.',
+                    'نسخ احتياطي تلقائي (محلي وسحابي عبر Google Drive) وتحديثات تلقائية عبر Firebase.'
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3 text-gray-300 text-sm font-medium">
                       <CheckCircle className="w-5 h-5 text-sky-400 shrink-0 mt-0.5" />
@@ -126,7 +126,7 @@ export default function PlatformOverview() {
                       <Shield className="w-4 h-4 text-sky-400" />
                       حالة الترخيص: مفعل بنجاح (Hardware License OK)
                     </span>
-                    <span className="bg-sky-500/20 text-sky-300 px-2 py-0.5 rounded text-[10px]">محتفظ سحابياً</span>
+                    <span className="bg-sky-500/20 text-sky-300 px-2 py-0.5 rounded text-[10px]">Google Drive Backup OK</span>
                   </div>
                 </div>
               </div>
@@ -152,7 +152,7 @@ export default function PlatformOverview() {
                     'تسجيل ومتابعة المصروفات والإيرادات الخارجية أثناء التنقل.',
                     'تصدير التقارير المالية ومشاركتها فورياً كملفات PDF.',
                     'تخزين محلي آمن بـ SQLite مع دعم كامل للعمل بدون إنترنت (Offline First).',
-                    'مزامنة سحابية مرنة مع نظام سطح المكتب عبر Google Drive أو Supabase.'
+                    'مزامنة سحابية مرنة مع نظام سطح المكتب عبر Google Drive Sync.'
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3 text-gray-300 text-sm font-medium">
                       <CheckCircle className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
@@ -191,7 +191,7 @@ export default function PlatformOverview() {
 
                   <div className="pt-2 text-center">
                     <span className="inline-block text-[11px] text-emerald-400 font-semibold bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-800/50">
-                      مزامنة سحابية مكتملة ✓
+                      مزامنة Google Drive مكتملة ✓
                     </span>
                   </div>
                 </div>

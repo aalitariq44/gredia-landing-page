@@ -54,14 +54,14 @@ export default function FeaturesGrid() {
       color: 'from-emerald-500 to-green-600',
       textColor: 'text-emerald-400',
       title: 'تفعيل مشفر ببصمة العتاد',
-      desc: 'نظام حماية هجين مشفر يربط الترخيص بعتاد الجهاز الفريد (Motherboard, CPU, HDD) مع التحقق السحابي عبر Supabase والعمل أوفلاين.'
+      desc: 'نظام حماية هجين مشفر يربط الترخيص بعتاد الجهاز الفريد (Motherboard, CPU, HDD) مع التحقق والأمان التام والعمل أوفلاين.'
     },
     {
       icon: CloudDownload,
       color: 'from-blue-500 to-indigo-600',
       textColor: 'text-blue-400',
-      title: 'نسخ احتياطي سحابي ومحلي',
-      desc: 'حماية بياناتك من الضياع عبر إنشاء نسخ احتياطية تلقائية مخصصة (يومية/أسبوعية) محلياً، ورفعها سحابياً بشكل آمن ومستمر.'
+      title: 'نسخ احتياطي سحابي بـ Google Drive',
+      desc: 'حماية بياناتك من الضياع عبر إنشاء نسخ احتياطية تلقائية مخصصة (يومية/أسبوعية) محلياً، ورفعها ومزامنتها سحابياً عبر Google Drive.'
     },
   ];
 

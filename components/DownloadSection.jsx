@@ -1,6 +1,6 @@
 'use client';
 
-import { Download, Monitor, Smartphone, CheckCircle2, Clock, Shield, ExternalLink } from 'lucide-react';
+import { Download, Monitor, Smartphone, CheckCircle2, Clock, ExternalLink } from 'lucide-react';
 
 export default function DownloadSection() {
   const DESKTOP_DOWNLOAD_URL = "https://drive.google.com/file/d/1I_vWpdzdtqVA4utOuaqnOW2JlJB1UBb_/view?usp=sharing";
@@ -59,7 +59,7 @@ export default function DownloadSection() {
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-sky-400 shrink-0" />
-                  <span>دعم النسخ الاحتياطي السحابي عبر Supabase وتفعيل العتاد</span>
+                  <span>دعم النسخ الاحتياطي السحابي عبر Google Drive وتفعيل العتاد</span>
                 </li>
               </ul>
             </div>
@@ -112,7 +112,7 @@ export default function DownloadSection() {
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-gray-500 shrink-0" />
-                  <span>مزامنة سحابية مرنة مع تطبيق سطح المكتب</span>
+                  <span>مزامنة سحابية مرنة عبر Google Drive</span>
                 </li>
               </ul>
             </div>

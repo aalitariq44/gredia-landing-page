@@ -45,7 +45,7 @@ export default function TechSpecs() {
 
               <div className="flex justify-between items-center py-2 border-b border-slate-800/60 text-sm">
                 <span className="text-gray-400 font-medium">محرك قواعد البيانات</span>
-                <span className="text-white font-semibold">SQLite (محلي) + Supabase (سحابي)</span>
+                <span className="text-white font-semibold">SQLite (محلي) + Google Drive (سحابي)</span>
               </div>
 
               <div className="flex justify-between items-center py-2 border-b border-slate-800/60 text-sm">
@@ -95,7 +95,7 @@ export default function TechSpecs() {
 
               <div className="flex justify-between items-center py-2 text-sm">
                 <span className="text-gray-400 font-medium">آلية المزامنة</span>
-                <span className="text-white font-semibold">Supabase & Google Drive Sync</span>
+                <span className="text-white font-semibold">Google Drive Sync</span>
               </div>
             </div>
           </div>
