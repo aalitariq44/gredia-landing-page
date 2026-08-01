@@ -19,6 +19,12 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="theme-color" content="#0b0f19" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link 
+          href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" 
+          rel="stylesheet" 
+        />
       </head>
       <body className="bg-[#0b0f19] text-gray-100 antialiased min-h-screen selection:bg-sky-500 selection:text-white">
         {children}
