@@ -6,12 +6,18 @@
   --font-tajawal: 'Tajawal', 'Cairo', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--font-tajawal);
   direction: rtl;
-  background-color: #0b0f19;
+  background-color: #0b0f19 !important;
   color: #f3f4f6;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /* Custom scrollbar */
@@ -30,21 +36,21 @@ body {
 }
 
 .glass-panel {
-  background: rgba(15, 23, 42, 0.75);
+  background: rgba(15, 23, 42, 0.85) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .glass-card {
-  background: rgba(30, 41, 59, 0.5);
+  background: rgba(30, 41, 59, 0.6) !important;
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.05);
   transition: all 0.3s ease;
 }
 
 .glass-card:hover {
-  background: rgba(30, 41, 59, 0.8);
+  background: rgba(30, 41, 59, 0.9) !important;
   border-color: rgba(2, 132, 199, 0.4);
   transform: translateY(-3px);
 }
@@ -62,5 +68,5 @@ body {
 }
 
 .hero-gradient-bg {
-  background: radial-gradient(circle at 50% 20%, rgba(2, 132, 199, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+  background: radial-gradient(circle at 50% 20%, rgba(2, 132, 199, 0.18) 0%, rgba(11, 15, 25, 0) 70%);
 }

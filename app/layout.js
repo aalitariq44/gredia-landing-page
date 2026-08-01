@@ -25,6 +25,36 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" 
           rel="stylesheet" 
         />
+        {/* Tailwind CSS CDN script for guaranteed immediate styling in dev & prod */}
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            tailwind.config = {
+              darkMode: 'class',
+              theme: {
+                extend: {
+                  colors: {
+                    brand: {
+                      50: '#f0f7ff',
+                      100: '#e0effe',
+                      200: '#bae0fd',
+                      500: '#0284c7',
+                      600: '#0265d6',
+                      700: '#034ea2',
+                      800: '#074283',
+                      900: '#0c376d',
+                      accent: '#10b981',
+                      gold: '#f59e0b'
+                    }
+                  },
+                  fontFamily: {
+                    sans: ['Tajawal', 'Cairo', 'sans-serif'],
+                  }
+                }
+              }
+            }
+          `
+        }} />
       </head>
       <body className="bg-[#0b0f19] text-gray-100 antialiased min-h-screen selection:bg-sky-500 selection:text-white">
         {children}
