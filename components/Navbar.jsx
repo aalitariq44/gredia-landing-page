@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Monitor, Smartphone, Download, ShieldCheck, Menu, X } from 'lucide-react';
+import { Monitor, Smartphone, Download, Menu, X, Sparkles } from 'lucide-react';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -15,6 +15,8 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const DESKTOP_DOWNLOAD_URL = "https://drive.google.com/file/d/1I_vWpdzdtqVA4utOuaqnOW2JlJB1UBb_/view?usp=sharing";
+
   return (
     <header className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
       scrolled ? 'glass-panel py-3 shadow-xl border-b border-slate-800' : 'bg-transparent py-5'
@@ -22,11 +24,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
-          {/* Logo & Brand */}
+          {/* Logo & Brand with Real Icon */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-sky-500/20 text-white font-black text-xl">
-              غ
-            </div>
+            <img 
+              src="/icon.png" 
+              alt="شعار تطبيق غريديا لحسابات المدارس الأهلية" 
+              className="w-10 h-10 object-contain drop-shadow-md"
+            />
             <div>
               <div className="flex items-center gap-2">
                 <span className="text-xl font-bold tracking-tight text-white">غريديا</span>
@@ -50,11 +54,13 @@ export default function Navbar() {
           {/* Header Action Buttons */}
           <div className="hidden md:flex items-center gap-3">
             <a 
-              href="#download"
+              href={DESKTOP_DOWNLOAD_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-sky-600 to-indigo-600 hover:from-sky-500 hover:to-indigo-500 text-white font-semibold text-sm shadow-md shadow-sky-600/25 transition-all duration-200 hover:scale-[1.02]"
             >
               <Download className="w-4 h-4" />
-              <span>تحميل التطبيق</span>
+              <span>تحميل البرنامج للكمبيوتر</span>
             </a>
           </div>
 
@@ -76,12 +82,14 @@ export default function Navbar() {
             <a href="#features" onClick={() => setMobileMenuOpen(false)} className="text-gray-300 hover:text-sky-400 py-1">الميزات الرئيسية</a>
             <a href="#specs" onClick={() => setMobileMenuOpen(false)} className="text-gray-300 hover:text-sky-400 py-1">المواصفات</a>
             <a 
-              href="#download" 
+              href={DESKTOP_DOWNLOAD_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)} 
               className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-sky-600 text-white font-semibold text-sm mt-2"
             >
               <Download className="w-4 h-4" />
-              <span>تحميل التطبيق الآن</span>
+              <span>تحميل البرنامج للكمبيوتر</span>
             </a>
           </div>
         )}
